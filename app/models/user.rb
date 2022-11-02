@@ -39,4 +39,8 @@ class User
   def will_save_change_to_email?
     false
   end
+  
+  def username
+    return email.split('@')[0].capitalize
+  end
 end
